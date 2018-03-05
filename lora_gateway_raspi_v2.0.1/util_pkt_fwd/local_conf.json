@@ -1,0 +1,107 @@
+{
+	"chan_conf": {
+		"chan_0": {
+			"enable": true,
+			"type": "SX1278",
+			"mode": "LORA",
+			"freq": 433700000,
+			"rssi_offset": -166.0,
+			"bandwidth": 125000,
+			"spread_factor": 12,
+			"tx_enable": true
+		},
+		"chan_1": {
+			"enable": false,
+			"type": "SX1278",
+			"mode": "LORA",
+			"freq": 434100000,
+			"rssi_offset": -166.0,
+			"bandwidth": 125000,
+			"spread_factor": 10,
+			"tx_enable": false
+		},
+		"chan_2": {
+			"enable": false,
+			"type": "SX1278",
+			"mode": "LORA",
+			"freq": 434100000,
+			"rssi_offset": -166.0,
+			"bandwidth": 125000,
+			"spread_factor": 11,
+			"tx_enable": true
+		},
+		"chan_3": {
+			"enable": false,
+			"type": "SX1278",
+			"mode": "LORA",
+			"freq": 434100000,
+			"rssi_offset": -166.0,
+			"bandwidth": 125000,
+			"spread_factor": 10,
+			"tx_enable": true
+		},
+		"chan_4": {
+			"enable": false,
+			"type": "SX1278",
+			"mode": "FSK",
+			"freq": 868800000,
+			"rssi_offset": -166.0,
+			"bandwidth": 125000,
+			"datarate": 50000,
+			"tx_enable": true
+		},
+		"tx_lut_0": {
+			"pa_gain": 0,
+			"mix_gain": 8,
+			"rf_power": 14,
+			"dig_gain": 0
+		},
+		"tx_lut_1": {
+			"pa_gain": 0,
+			"mix_gain": 10,
+			"rf_power": -3,
+			"dig_gain": 0
+		},
+		"tx_lut_2": {
+			"pa_gain": 0,
+			"mix_gain": 12,
+			"rf_power": 0,
+			"dig_gain": 0
+		},
+		"tx_lut_3": {
+			"pa_gain": 1,
+			"mix_gain": 8,
+			"rf_power": 3,
+			"dig_gain": 0
+		}
+	},
+	"gateway_conf": {
+		"gateway_ID": "AA555A0000000102",
+		"pin_CS_0": 1,
+		"pin_CS_1": 2,
+		"pin_CS_2": 3,
+		"pin_CS_3": 4,
+		"pin_DIO_0": 23,
+		"pin_DIO_1": 24,
+		"pin_DIO_2": 25,
+		"pin_DIO_3": 27,
+		"pin_DIO_4": 28,
+		"pin_DIO_5": 29,
+		"pin_RST": 26,
+		"server_address": "192.168.3.173",
+		"serv_port_up": 1780,
+		"serv_port_down": 1782,
+		"keepalive_interval": 10,
+		"stat_interval": 300,
+		"push_timeout_ms": 100,
+		"forward_crc_valid": true,
+		"forward_crc_error": false,
+		"forward_crc_disabled": false,
+		"fake_gps": true,
+		"beacon_period": 128,
+		"beacon_freq_hz": 433700000,
+		"ref_latitude": 21.925626,
+		"ref_longitude": 111.938299,
+		"ref_altitude": 100.7
+	}
+}

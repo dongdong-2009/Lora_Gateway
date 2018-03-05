@@ -1,0 +1,104 @@
+/*
+    // TODEL for test
+    sx127x_read(channel,0x01);
+    sx127x_read(channel,0x06);
+    sx127x_read(channel,0x07);
+    sx127x_read(channel,0x08);
+    sx127x_read(channel,0x24);
+    sx127x_read(channel,0x09);
+    sx127x_read(channel,0x0c);
+    sx127x_read(channel,0x1c);
+    sx127x_read(channel,0x1d);
+    sx127x_read(channel,0x40);
+    sx127x_read(channel,0x41);
+    sx127x_read(channel,0x4B);
+    sx127x_read(channel,0x4d);
+    sx127x_read(channel,0x70);
+    sx127x_read(channel,0x1d);
+
+		sx127x_write(channel,0x01,0x00);
+		sx127x_read(channel,0x01);
+
+		sx127x_write(channel,0x09,0x00);
+		sx127x_read(channel,0x09);
+
+		sx127x_write(channel,0x01,0x80);
+		wait_ms(2);
+		sx127x_read(channel,0x01);
+
+		sx127x_write(channel,0x01,0x81);
+		wait_ms(2);
+		sx127x_read(channel,0x01);
+
+		sx127x_write(channel,0x01,0x81);
+		wait_ms(2);
+		sx127x_read(channel,0x01);
+
+		sx127x_write(channel,0x01,0x84);
+		wait_ms(2);
+		sx127x_read(channel,0x01);
+
+	    sx127x_read(channel,0x1c);
+
+		sx127x_write(channel,0x01,0x85);
+		wait_ms(2);
+		sx127x_read(channel,0x01);
+
+	    sx127x_read(channel,0x1c);
+
+		sx127x_write(channel,0x01,0x86);
+		wait_ms(1);
+		sx127x_read(channel,0x01);
+
+		sx127x_write(channel,0x01,0x87);
+		wait_ms(1);
+		sx127x_read(channel,0x01);
+
+		sx127x_write(channel,0x01,0x88);
+		wait_ms(1);
+		sx127x_read(channel,0x01);
+
+		uint8_t m = 0;
+		int cnt = 0;
+		while(m != 0x8D && cnt < 5){
+			sx127x_write(channel,0x01,0x0D);
+			wait_ms(1);
+			m = sx127x_read(channel,0x01);
+			cnt++;
+		}
+
+		//sx127x_write(channel,0x1D,0x72);
+		sx127x_read(channel,0x1D);
+		//sx127x_write(channel,0x1E,0xc4);
+		sx127x_read(channel,0x1e);
+		//sx127x_write(channel,0x26,0x0c);
+		sx127x_read(channel,0x26);
+
+
+		sx127x_read(channel,0x06);
+		sx127x_read(channel,0x07);
+		sx127x_read(channel,0x08);
+
+		sx127x_read(channel,0x0c);
+		sx127x_read(channel,0x23);
+		sx127x_read(channel,0x1f);
+		sx127x_read(channel,0x39);
+		sx127x_read(channel,0x40);
+
+		return;
+
+		sx127x_write(channel,0x06,0x6c);
+		sx127x_write(channel,0x07,0x86);
+		sx127x_write(channel,0x08,0x66);
+
+		sx127x_write(channel,0x0c,0x21);
+		sx127x_write(channel,0x23,0x40);
+		sx127x_write(channel,0x1f,0x08);
+		sx127x_write(channel,0x39,0x34);
+		sx127x_write(channel,0x40,0xc0);
+
+		sx127x_write(channel,0x01,0x8D);
+		wait_ms(5); // wait 5ms
+		sx127x_read(channel,0x01);
+*/
+     // for test end
